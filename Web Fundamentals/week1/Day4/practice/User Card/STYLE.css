@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.ONE{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 600px;
+    height: 300px;
+    border: 1px solid gray;
+}
+.First{
+    height: 100px;
+    background-color: #17A2B8;
+}
+.Second{
+    padding: 40px 20px 20px 20px;
+    font-weight: bold;
+}
+.Seattle{
+    margin: 5px 0px;
+}
+.par{
+    margin: 5px 0px;
+}
+.picture{
+    position: absolute ;
+    top: 18%;
+    left: 30%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
