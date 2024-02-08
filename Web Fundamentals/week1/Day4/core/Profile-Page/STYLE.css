@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: black;
+    color: white;
+}
+.nav-links{
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+.pre{
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pre a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    font-weight: 900;
+}
+.btn{
+    border: 2px solid black;
+    background-color: #17A2B8;
+    color: white;
+    width: 80px;
+    height: 30px;
+}
+.main{
+    padding: 20px 200px 0px 200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.one{
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profil{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.bar{
+    height: 100px;
+    background-color: #17A2B8;
+    border: 2px solid #DDDDDD ;
+    border-bottom: 0px ;
+}
+.information{
+    height: 170px;
+    padding: 50px 50px 25px 25px;
+    border: 2px solid #DDDDDD;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.information h1{
+    font-family: 'Roboto', sans-serif;
+}
+.pir{
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+.taswira{
+    position: absolute;
+    top: 147px;
+    left: 230px;
+    border: 2px solid #DDDDDD ;
+    border-radius: 50%;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+}
+.bar1{
+    height: 50px;
+    background-color: #333333;
+    border: 2px solid #DDDDDD ;
+    border-bottom: 0px ;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    color: white;
+}
+
+.information-1{
+    height: 80px;
+    padding: 10px 20px 0px 25px;
+    border: 2px solid #DDDDDD;
+    border-top: 0px;
+    border-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.gris{
+    color: #C1C1C1;
+    font-size: medium;
+}
+.gras{
+    font-weight: bold;
+}
+.petit{
+    font-size: small;
+}
+.two{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar2{
+    width: 200px;
+    height: 50px;
+    background-color: #333333;
+    border: 2px solid #DDDDDD ;
+    border-bottom: 0px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    color: white;
+    span{
+        background-color: gray;
+        color: black;
+        border: 2px solid gray;
+        border-radius: 50%;
+        font-weight: 200;
+    }
+}
+.information-2{
+    height: 100px;
+    width: 175px;
+    padding: 10px 20px 0px 25px;
+    border: 2px solid #DDDDDD;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
+.tod{
+    display: flex;
+    width: 175px;
+    justify-content: space-between;
+    align-items: center;
+}
+.loula{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    justify-content: space-between;
+    img {
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+}
+.phi{
+    display: flex;
+    width: 175px;
+    justify-content: space-between;
+    align-items: center;
+}
+.loula-phi{
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+}
+.information-3{
+    height: 250px;
+    width: 175px;
+    padding: 10px 20px 0px 25px;
+    border: 2px solid #DDDDDD;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.personne{
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+}
+.Personne {
+    display: flex;
+    width: 95px;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+}
+.view{
+    border: 2px solid #DDDDDD;
+    border-top: 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
