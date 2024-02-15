@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0px 200px;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 40px;
+    }
+}
+header{
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+.col-Left{
+    width: 180px;
+    height: 250px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    img{
+        width: 70px;
+    }
+    a{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+
+}
+.cadre{
+    width: 600px;
+    height: 120px;
+    border: 3px solid black;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+    .message{
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+}
+.increase1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.increase2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.uncrease-Likes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .btn{
+        width: 60px;
+        height: 30px;
+        font-weight: bold;
+        background-color: #FFD966;
+        box-shadow: 4px 4px 2px black;
+        border: 2px solid black;
+        margin-right: 10px;
+    }
+}
