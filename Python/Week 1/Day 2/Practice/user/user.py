@@ -16,15 +16,17 @@ class User:
 
     def enroll(self):
         self.rewards_number = True
-        self.gold_card_points = 200 
+        self.gold_card_points = 350 
     def spend_point(self,amount):
         self.gold_card_points=self.gold_card_points-amount
-user_gold=User("syrine","achouri","syrinemedo0@gmail.com",21)
+user_gold=User("lilly","green","lilly@gmail.com",22)
 user_gold.display_info()
 user_gold.enroll()
-# ==============
+
+
+
 user_silver=User("mila","marwah","milamarwah@gmail.com",26)
-user_bronze=User("mariem","doe","samopat@yahoo.com",29)
+user_bronze=User("ross","geller","ross@yahoo.com",29)
 user_gold.spend_point(50)
 user_silver.enroll()
 user_silver.spend_point(80)
