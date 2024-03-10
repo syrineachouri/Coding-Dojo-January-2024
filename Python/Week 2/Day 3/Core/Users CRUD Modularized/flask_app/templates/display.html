@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'style.css' )}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="table">
+        <table>
+            <thead>
+                <td>id</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+                <td>Created At</td>
+                <td>Actions</td>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td> {{user.id}} </td>
+                    <td> {{user.first_name}} </td>
+                    <td> {{user.last_name}} </td>
+                    <td> {{user.email}} </td>
+                    <td> {{user.created_at}} </td>
+                    <td> 
+                        <a href="/read/{{user.id}}"> Show</a> | <a href="/edit/{{user.id}}">edit</a> | <a href="/delete/{{user.id}}">delete</a>
+
+                    </td>
+                </tr>
+                {% endfor%}
+            </tbody>
+        </table>
+    </div>
+    <form action="/create">
+        <button type="submit" class="btn"> Add a new user</button>
+    </form>
+</body>
+</html>

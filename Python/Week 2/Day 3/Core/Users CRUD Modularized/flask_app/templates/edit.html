@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'style.css' )}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit {{user.first_name}} </h1>
+        <form action="/update" method="post" class="form">
+            <input type="hidden" name="id" value="{{user.id}}">
+            <label for="fname">First Name : </label> <br>
+            <input type="text" name="fname"> <br>
+            <label for="lname"> Last Name:</label> <br>
+            <input type="text" name="lname"> <br>
+            <label for="email">Email : </label> <br>
+            <input type="email" name="email"> <br>
+            <button type="submit" class="btn">Update</button>
+            <a href="/read/{{user.id}}">Show User</a>
+        </form>
+
+    </div>
+
+</body>
+</html>
