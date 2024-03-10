@@ -1,0 +1,13 @@
+.register {
+    height:250px;
+    width : 150px;
+    margin: auto;
+}
+.login{
+    height: 150px;
+    margin: auto;
+    width: 150px;
+}
+.container {
+    display: flex;
+}

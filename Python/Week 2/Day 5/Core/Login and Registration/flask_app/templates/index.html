@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = '/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="register">
+            <h3>Register Here</h3>
+            {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+            {% if messages %}                            <!-- check if there are any messages -->
+            {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <form action="/register" method="post">
+                <label for="first_name">First Name :</label>
+                <input type="text" name="first_name">
+                <label for="last_name">Last Name :</label>
+                <input type="text" name="last_name" >
+                <label for="email">Email : </label>
+                <input type="text" name="email">
+                <label for="password">Password : </label>
+                <input type="password" name="password">
+                <label for="password-c"> Confirm your password</label>
+                <input type="password" name="password-c">
+                <button type="submit"> Register</button>
+            </form>
+        </div>
+        <div class="login">
+            <h3>Login Here</h3>
+            <form action="/login" method="post">
+                <label for="email"> Email: </label>
+                <input type="text" name="email">
+                <label for="password">Password :</label>
+                <input type="password" name="password">
+                <button  type="submit"> Login </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
