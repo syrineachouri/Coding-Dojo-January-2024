@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(217, 205, 190);
+    display: flex;
+    flex-direction: column;
+    background: color-mix(in srgb-linear, darkmagenta 50%, yellow 50%);
+}
+
+.header {
+    display: flex;
+    color: darkmagenta;
+    font-size: 4em;
+    font-style: italic;
+    margin: .5em 0em .5em 1em;
+    text-decoration: underline;
+}
+
+.dashboard_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 1em 0em 1em;
+}
+
+.column_wrapper {
+    margin: 2em 0em 0em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.column_one {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 4em 2em 4em;
+    border: 2px black solid;
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+}
+
+.column_two {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 4em 2em 4em;
+    border: 2px black solid;
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+}
+
+.column_one_form {
+    display: flex;
+}
+
+.flash_wrapper p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-weight: bolder;
+}
+
+input, textarea {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit, .logout {
+    display: flex;
+    background-color: darkmagenta;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recipe_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe_wrapper h2 {
+    padding: 0em 1.5em 0em 1.5em;
+    border: 1px black solid;
+    background-color: darkmagenta;
+    color: white;
+}
+
+.links a {
+    margin: 0em 0em 0em 1em;
+}
+
+.formwrapper form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form1, .form2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    justify-content: center;
+}
+
+.form1 input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25em;
+}
+
+.form2 div{
+    margin: 1em;
+}
+
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yes, .no {
+    display: flex;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}

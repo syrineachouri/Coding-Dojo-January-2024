@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        <h1 class="header">Recipe Share</h1>
+    </div>
+    <div class="column_wrapper">
+        <div class="column_one">
+            <div class="column_one_header">
+                <h1>Register:</h1>
+            </div>
+            <div class="column_one_form">
+                <form action="/register" method="POST">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name"><br>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name"><br>
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="email"><br>
+                    <label for="passord">Password</label>
+                    <input type="password" name="password" id="password"><br>
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" name="confirm_password"><br>
+                    <input type="submit" value="Register" class="submit">
+                </form>
+            </div>
+        </div>
+        <div class="column_two">
+            <div class="column_two_header">
+                <h1>Login:</h1>
+            </div>
+            <div class="column_two_form">
+                <form action="/login" method="POST">
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="email"><br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password"><br>
+                    <input type="submit" value="Login" class="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="flash_wrapper">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="flash">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>
