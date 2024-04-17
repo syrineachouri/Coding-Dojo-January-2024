@@ -1,18 +1,35 @@
-import FetchPkmnBtn from './components/FetchPkmnBtn';
-import ShowPkmns from './components/ShowPkmns';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function App() {
-  const [pkmns, setPkmns] = useState([]);
-  console.log(`Desde app: ${pkmns}`);
-  
+  const [pokemonNames, setPokemonNames] = useState([]);
+
+  const FetchPok = () => {
+    fetch("https://pokeapi.co/api/v2/pokemon")
+      .then(response => response.json())
+      .then((JsonResponse) => {
+        console.log(JsonResponse)
+        setPokemonNames(JsonResponse.results)
+      })
+      .catch(err => {
+        console.log(err);
+      })
+  };
+
   return (
-    <>
-      <FetchPkmnBtn pkmns={pkmns} setPkmns={setPkmns} />
-      <ShowPkmns pkmns={pkmns}/>
-    </>
+    <div className="App">
+      <h1>Pokemon</h1>
+      <button onClick={FetchPok}>Fetch Pokemon</button>
+      {
+        pokemonNames.map((p) => {
+          return (
+            <ul>
+              <il>{p.name}</il>
+            </ul>
+          )
+        })
+      }
+    </div>
   );
 }
 
