@@ -12,7 +12,7 @@ const Edit = () => {
 
     const SubmitHandler = (e) => {
         e.preventDefault()
-        axios.put(`http://localhost:8000/api/author/` + id, { name })
+        axios.patch(`http://localhost:8000/api/author/` + id, { name })
             .then((res) => {
                 console.log("✅✅✅✅✅")
                 navigate('/');
