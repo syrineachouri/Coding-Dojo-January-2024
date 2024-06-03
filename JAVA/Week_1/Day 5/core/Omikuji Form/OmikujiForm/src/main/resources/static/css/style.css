@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+div {
+	margin: 0 auto;
+	width: 50%;
+}
+
+form {
+	display: flex;
+	flex-flow: column;
+	gap: 20px;
+}
+
+.counter {
+	width: 10%;
+}
+
+input {
+	width: 30%;
+}
+
+textarea {
+	width: 50%;
+}
