@@ -13,9 +13,9 @@ import com.syrine.bookapi.services.BookService;
 
 //..
 @RestController
-public class BookController {
+public class BookApi {
  private final BookService bookService;
- public BookController(BookService bookService){
+ public BookApi(BookService bookService){
      this.bookService = bookService;
  }
  @RequestMapping("/api/books")
