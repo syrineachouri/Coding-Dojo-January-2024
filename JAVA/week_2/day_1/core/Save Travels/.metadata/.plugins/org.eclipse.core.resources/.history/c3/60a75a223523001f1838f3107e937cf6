@@ -1,0 +1,8 @@
+package com.syrine.savetravels.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class TravelController {
+	
+}

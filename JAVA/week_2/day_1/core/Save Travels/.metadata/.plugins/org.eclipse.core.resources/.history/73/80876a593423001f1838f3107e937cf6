@@ -1,0 +1,38 @@
+package com.syrine.savetravels.services;
+
+import java.util.List;
+
+
+@Service
+public class TravelService {
+private final TravelRepository TravelRepo;
+	
+	public TravelService(TravelRepository travelRepo) {
+		this.travelRepo = travelRepo;
+	}
+	
+	public List<Travel> allTravels() {
+		return travelRepo.findAll();
+	}
+	
+	public Travel addTravel (Travel burger) {
+		return travelRepo.save(travel);
+	}
+	//edit 
+		public Travel updateTravel(Travel travel) {
+			return travelRepo.save(travel);
+		}
+		
+		//READ ONE 
+		public Travel findTravelById(Long id) {
+			Optional<Travel> optBurger = travelRepo.findById(id);
+			if(optTravel.isPresent()) {
+				return optTravel.get();
+			}
+			return null;
+		}
+
+}
+
+
+}

@@ -1,0 +1,37 @@
+package com.syrine.savetravels.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TravelService {
+private final TravelRepository TravelRepo;
+	
+	public TravelService(TravelRepository travelRepo) {
+		this.burgerRepo = travelRepo;
+	}
+	
+	public List<Travel> allTravels() {
+		return burgerRepo.findAll();
+	}
+	
+	public Travel addTravel (Travel burger) {
+		return travelRepo.save(travel);
+	}
+	//edit 
+		public Travel updateTravel(Travel travel) {
+			return travelRepo.save(travel);
+		}
+		
+		//READ ONE 
+		public Travel findTravelById(Long id) {
+			Optional<Travel> optBurger = travelRepo.findById(id);
+			if(optTravel.isPresent()) {
+				return optTravel.get();
+			}
+			return null;
+		}
+
+}
+
+
+}

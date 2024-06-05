@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.syrine.savetravels.controllers.Travel&apos; to &apos;TravelController&apos;&#x0D;&#x0A;- Original project: &apos;SaveTravels&apos;&#x0D;&#x0A;- Original element: &apos;com.syrine.savetravels.controllers.Travel&apos;&#x0D;&#x0A;- Renamed element: &apos;com.syrine.savetravels.controllers.TravelController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Travel&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.syrine.savetravels.controllers{Travel.java[Travel" matchStrategy="1" name="TravelController" qualified="false" references="true" similarDeclarations="false" stamp="1717584170259" textual="false" version="1.0"/>
+</session>

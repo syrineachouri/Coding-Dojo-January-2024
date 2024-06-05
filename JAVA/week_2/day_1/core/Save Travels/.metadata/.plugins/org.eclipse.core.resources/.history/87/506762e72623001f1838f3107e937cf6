@@ -1,0 +1,10 @@
+package com.syrine.savetravels.controllers;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="travel")
+public class Travel {
+
+}

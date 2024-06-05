@@ -1,0 +1,12 @@
+package com.syrine.savetravels.repositories;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface TravelRepository {
+	@Repository
+	public interface Repository extends CrudRepository<TravelController, Long>  {
+		List<TravelController> findAll();
+	}
+}

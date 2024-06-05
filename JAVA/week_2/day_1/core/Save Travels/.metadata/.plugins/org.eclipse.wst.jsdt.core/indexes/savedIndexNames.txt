@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\asus\Desktop\Coding-Dojo-January-2024\JAVA\week_2\day_1\core\Save Travels\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3045916898.index
+1084180964.index
+3007437884.index
+2095486081.index
+747589883.index
+2306494606.index

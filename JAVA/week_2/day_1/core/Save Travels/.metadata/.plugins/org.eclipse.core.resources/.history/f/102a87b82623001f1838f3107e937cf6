@@ -1,0 +1,5 @@
+package com.syrine.savetravels.controllers;
+
+public class Travel {
+
+}
