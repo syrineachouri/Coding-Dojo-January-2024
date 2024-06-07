@@ -1,7 +1,5 @@
 package com.syrine.burger.models;
 
-
-
 import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
